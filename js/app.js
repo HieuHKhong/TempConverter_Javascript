@@ -1,7 +1,8 @@
 
 
 let buttonPressed = document.querySelector("button")
-buttonPressed.addEventListener("click", buttonClicked)
+buttonPressed.addEventListener("click", buttonClicked
+)
 
 function buttonClicked(){
     // Gets value from the textbox in html
@@ -40,7 +41,7 @@ function buttonClicked(){
         alert("Please enter a value other than e.")
     }
     // Displays conversion into the p tag labeled "conversion"
-    let display = document.getElementById("conversion").innerHTML = total ;
+    let display = document.getElementById("conversion").innerHTML = total;
     
 }
     
