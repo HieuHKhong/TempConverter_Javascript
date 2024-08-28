@@ -35,7 +35,9 @@ function buttonClicked(){
     }else if (selectedMeasurement === "Kelvin" && selectedConversion === "Fahrenheit"){
         total = (+input - +273.15) * 9/5 + 32 + " " + symbol;
     }else if (selectedConversion === selectedMeasurement){  // Makes it so that user cannot input same temperature conversion
-        total = "Please enter a conversion."
+        total = "Please enter a unique conversion."
+    }else if (input == ''){
+        alert("Please enter a value.")
     }
     // Displays conversion into the p tag labeled "conversion"
     let display = document.getElementById("conversion").innerHTML = total ;
