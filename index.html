@@ -6,11 +6,12 @@
     <title>Temp Converter</title>
     <link rel="stylesheet" href="./js/tempProblem.js">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 <body>
     <div class="container title">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 titleName">
           <h1>Temperature Converter</h1>
         </div>
       </div>
@@ -18,31 +19,37 @@
 
     <div class="container Converter">
       <div class="row">
-        <div class="col-6 choice">
+
+        <div class="col-12 temperature">
           <label for="temp">Temperature: </label>
           <input type="number" id="temp" value="0" name="Temperature"><br></br>
-      
-          <label for="Measurement">Choose a measurement to convert from </label> <br></br>
-          <select name="Measurement" id="Measurement">
-            <option value="celsius">Celsius</option>
-            <option value="Fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-            </select>
+          </div>
 
-            <br></br>
+          <div class="col-sm-6 col-12 measurementAttempt">
+            <label for="Measurement">Choose a measurement to convert from </label> <br></br>
+            <select name="Measurement" id="Measurement">
+              <option value="celsius">Celsius</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+              </select>
+          </div>
 
+          <div class="col-sm-6 col-12 conversionAttempt">
             <label for="Conversion">Choose a measurement to convert to </label> <br></br>
             <select name="Conversion" id="Conversion">
             <option value="celsius">Celsius</option>
             <option value="Fahrenheit">Fahrenheit</option>
             <option value="kelvin">Kelvin</option>
-          </select>
+            </select>
           </div>
 
-          <div class="col-6">
-            <h2>Converted Temp: </h2>
+          <div class="col-12 buttonConverter">
             <button>Convert</button>
-            <p id="conversion"></p>
+          </div>
+
+          <div class="col-12 converted">
+            <h2>Converted Temp: </h2>
+            <h3 id="conversion"></h3>
            
           </div>
         </div>
