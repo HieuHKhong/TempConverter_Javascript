@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.title h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+    color: rgb(221, 214, 214);
+}
+
+.Converter{
+    font-size: 22px;
+    color: rgb(221, 214, 214);
+    text-shadow: 2px 2px 5px black;
+
+}
