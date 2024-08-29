@@ -1,8 +1,7 @@
 
-
+// Process function when button is pressed
 let buttonPressed = document.querySelector("button")
-buttonPressed.addEventListener("click", buttonClicked
-)
+buttonPressed.addEventListener("click", buttonClicked)
 
 function buttonClicked(){
     // Gets value from the textbox in html
